@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class StartComponent {
 
+  exitGame() {
+    alert("Exit werkt nog niet, maar dit is een placeholder.");
+  }
 }

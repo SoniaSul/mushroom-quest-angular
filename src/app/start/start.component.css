@@ -1,0 +1,35 @@
+.start-container {
+    text-align: center;
+    background-color: #fff5cc;
+    height: 100vh;
+    padding-top: 60px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .title {
+    color: #d89a00;
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .mushroom-img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  
+  .buttons button {
+    background-color: #e6a100;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .buttons button:hover {
+    background-color: #ffb732;
+  }
