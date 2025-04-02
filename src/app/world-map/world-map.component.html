@@ -1,1 +1,35 @@
-<p>world-map works!</p>
+
+<div class="map-container">
+    <div class="top-icons">
+        <a routerLink="/help"><img src="assets/help.png" alt="Help" /></a>
+        <a routerLink="/settings"><img src="assets/settings.png" alt="Instellingen" /></a>
+        <a routerLink="/profile"><img src="assets/profile1.png" alt="Profiel" /></a>
+      </div>
+    <h2>Kies een wereld</h2>
+  
+    <div class="worlds">
+      <div class="world">
+        <button routerLink="/levels">
+          <img src="assets/World1.png" alt="World 1" />
+          <p>World 1<br /><small>10/15</small></p>
+        </button>
+      </div>
+  
+      <div class="world locked">
+        <button disabled>
+          <img src="assets/World2.png" alt="World 2" />
+          <p>World 2</p>
+        </button>
+      </div>
+  
+      <div class="world locked">
+        <button disabled>
+          <img src="assets/World3.png" alt="World 3" />
+          <p>World 3</p>
+        </button>
+      </div>
+    </div>
+  
+    <button class="exit-btn" routerLink="/">EXIT</button>
+  </div>
+  
