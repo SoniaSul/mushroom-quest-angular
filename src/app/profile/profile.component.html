@@ -1,1 +1,41 @@
-<p>profile works!</p>
+<div class="profile-container">
+    <h1>PROFILE</h1>
+  
+    <div class="profile-content">
+      <!-- Avatar -->
+      <div class="avatar">
+        <img src="assets/profile1.png" alt="Avatar" class="profile-img" />
+  <img src="assets/editprofile.png" alt="Edit" class="edit-icon" />
+
+      </div>
+  
+      <!-- Form -->
+      <div class="profile-form">
+        <div class="form-item">
+          <label for="nickname">NICKNAME</label>
+          <input type="text" id="nickname" />
+        </div>
+  
+        <div class="form-item">
+          <label for="level">LEVEL</label>
+          <span class="readonly-field">20</span>
+        </div>
+  
+        <div class="form-item">
+          <label for="country">COUNTRY</label>
+          <select id="country">
+            <option>Belgium</option>
+            <option>Netherlands</option>
+            <option>France</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="save">SAVE</button>
+      <button class="back" routerLink="/map">BACK</button>
+    </div>
+  </div>
+  

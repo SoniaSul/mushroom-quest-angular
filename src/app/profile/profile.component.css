@@ -1,0 +1,118 @@
+:host {
+    display: block;
+    background-color: #FAF3D3;
+    min-height: 100vh;
+    font-family: 'Karantina', sans-serif;
+    padding: 2rem;
+  }
+  
+  .profile-container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #C97E1F;
+    margin-bottom: 2rem;
+    letter-spacing: 4px;
+  }
+  
+  .profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap; 
+    margin-bottom: 3rem;
+  }
+  
+  
+  .avatar {
+    position: relative;
+    width: 120px;
+    height: 120px;
+  }
+  
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #C97E1F;
+    display: block;
+  }
+  
+  .edit-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 4px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translate(25%, 25%);
+    z-index: 1;
+  }
+  
+  .profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  
+  .form-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+  
+  .form-item label {
+    flex: 1;
+    text-align: left;
+    font-weight: bold;
+    color: #181717;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .form-item input,
+  .form-item select,
+  .readonly-field {
+    flex: 1;
+    max-width: 150px;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Karantina', sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .readonly-field {
+    color: #0e0e0e;
+    font-size: x-large;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+  }
+  
+  button.save,
+  button.back {
+    background-color: #DAA520;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-family: 'Karantina', sans-serif;
+  }
+  
