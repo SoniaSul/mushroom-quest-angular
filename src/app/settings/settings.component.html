@@ -1,1 +1,34 @@
-<p>settings works!</p>
+<div class="settings-container">
+    <h1>SETTINGS</h1>
+  
+    <div class="setting-item">
+        <label for="sound">SOUND</label>
+        <label class="switch">
+          <input type="checkbox" id="sound" />
+          <span class="slider"></span>
+        </label>
+      </div>
+      
+      <div class="setting-item">
+        <label for="music">MUSIC</label>
+        <label class="switch">
+          <input type="checkbox" id="music" />
+          <span class="slider"></span>
+        </label>
+      </div>
+  
+    <div class="setting-item">
+      <label for="language">LANGUAGE</label>
+      <select id="language">
+        <option>NEDERLANDS</option>
+        <option>ENGLISH</option>
+        <option>FRANÇAIS</option>
+      </select>
+    </div>
+  
+    <div class="buttons">
+      <button class="save">SAVE</button>
+      <button class="back" routerLink="/map">BACK</button>
+    </div>
+  </div>
+  

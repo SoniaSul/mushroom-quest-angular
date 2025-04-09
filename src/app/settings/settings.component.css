@@ -1,0 +1,121 @@
+:host {
+    display: block;
+    background-color: #FAF3D3;
+    min-height: 100vh;
+    font-family: 'Karantina', sans-serif;
+    padding: 2rem;
+  }
+  
+  .settings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh; 
+    padding: 0 2rem;
+  }
+  
+  .setting-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+  }
+  button {
+    font-family: 'Karantina', sans-serif;
+    padding: 0.3rem 1.5rem;
+    font-size: 2rem;
+  }  
+  h1 {
+    font-size: 3rem;
+    color: #C97E1F;
+    margin-bottom: 2rem;
+  }
+  
+  .setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;  /* minder ruimte boven/onder elke rij */
+    font-size: 1.5rem;
+  }
+  
+  
+  .setting-item label {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .setting-item input,
+  .setting-item select {
+    flex: 1;
+    max-width: 150px;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+    margin-top: 2rem;
+  }
+  
+  button.save,
+  button.back {
+    background-color: #DAA520;
+    color: white;
+    font-size: 2.5rem;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+  /* Switch Container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 28px;
+  }
+  
+  /* Verberg standaard checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Slider (de ronde knop) */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  /* De cirkel */
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px; width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  /* Actieve status */
+  .switch input:checked + .slider {
+    background-color: #C97E1F;
+  }
+  
+  .switch input:checked + .slider:before {
+    transform: translateX(122px);
+  }
+  
