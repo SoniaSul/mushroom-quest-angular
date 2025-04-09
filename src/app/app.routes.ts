@@ -5,6 +5,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { HelpPageComponent } from './help-page/help-page.component';
 import { ProfileComponent } from './profile/profile.component';
 import { WorldMapComponent } from './world-map/world-map.component';
+import { AvatarSelectComponent } from './avatar-select/avatar-select.component';
 
 export const routes: Routes = [
   { path: '', component: StartComponent },
@@ -13,4 +14,5 @@ export const routes: Routes = [
   { path: 'help', component: HelpPageComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'map', component: WorldMapComponent },
+  { path: 'avatars',component:AvatarSelectComponent}
 ];
