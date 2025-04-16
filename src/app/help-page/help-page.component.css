@@ -1,0 +1,74 @@
+:host {
+    display: block;
+    background-color: #faf3d3;
+    font-family: 'Karantina', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .help-container {
+    text-align: center;
+  }
+  
+  .quick-guide {
+    text-align: left;
+  }
+  .help-container h1 {
+    font-size: 3rem;
+    color: #c97e1f;
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .card {
+    background-color: #fff6dc;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    flex: 1 1 400px;
+  }
+  
+  .card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card select,
+  .card textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  button.back,
+  button.send {
+    background-color: #daa520;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
