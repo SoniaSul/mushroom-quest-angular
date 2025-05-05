@@ -4,25 +4,32 @@
   
     <div class="level-navigation">
       <!-- Linkerpijl -->
-      <a routerLink="/profile">
+      <a routerLink="/map">
         <img src="assets/Polygon 2.png" alt="left arrow" class="arrow-icon" />
       </a>
   
       <!-- Levels -->
       <div class="grid">
-        <button *ngFor="let level of levels" [disabled]="level.locked">
-            <ng-container *ngIf="level.locked; else unlocked">
-              <img src="assets/gesloten.png" alt="gesloten" width="24" height="24" />
-            </ng-container>
-            <ng-template #unlocked>
+        <ng-container *ngFor="let level of levels">
+          <a *ngIf="!level.locked && level.number === 1" href="https://game-ux-design.onrender.com/" target="_blank">
+            <button>
               {{ level.number }}
-            </ng-template>
-          </button>
+            </button>
+          </a>
           
+          <button *ngIf="!level.locked && level.number !== 1">
+            {{ level.number }}
+          </button>
+      
+          <button *ngIf="level.locked" disabled>
+            <img src="assets/gesloten.png" alt="gesloten" width="24" height="24" />
+          </button>
+        </ng-container>
       </div>
+      
   
       <!-- Rechterpijl -->
-      <a routerLink="/profile">
+      <a>
         <img src="assets/Polygon 1.png" alt="right arrow" class="arrow-icon" />
       </a>
     </div>
